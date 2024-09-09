@@ -90,4 +90,4 @@ async def election_timer(duration):
     discord.utils.get(client.get_all_channels(), guild_name='• gay cl☆wn group •', name='announcements').send(f"Election is complete - our new mods are {mods[0][0]} & {mods[1][0]} with {mods[0][1]} and {mods[1][1]} votes respectively!")
 
     
-client.run()
+client.run(TOKEN)
