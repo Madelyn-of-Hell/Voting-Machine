@@ -27,6 +27,7 @@ async def on_ready():
         name='start-election',
         description='an admin-only command; starts an election if one is not current running'
 )
+@tree.app_command.checks.has_permissions(manage_guild=True)
 async def start_election(interaction, duration_hours:int):
     if not db['config']['is_election_running']:
         db['config']['is_election_running'] = True
